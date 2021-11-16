@@ -4,19 +4,30 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node app",
-    "test": "jest --watch",
-    "dev": "nodemon app"
+    "start": "node index",
+    "test": "cross-env NODE_ENV=test jest --watch",
+    "dev": "cross-env NODE_ENV=dev nodemon index",
+    "lint": "eslint ."
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.0.1",
+    "config": "^3.3.6",
+    "cors": "^2.8.5",
     "dotenv": "^10.0.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "sequelize": "^6.9.0",
+    "sqlite3": "^5.0.2"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.3",
     "jest": "^27.3.1",
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "supertest": "^6.1.6"
   }
 }
