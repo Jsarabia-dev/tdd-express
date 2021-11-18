@@ -11,3 +11,5 @@ rules:
   "no-console": off
   "space-in-parens": off
   "template-curly-spacing": off
+  "consistent-return": off
+  "max-len": off
